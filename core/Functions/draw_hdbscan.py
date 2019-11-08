@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 
 
 # dimension: dimension of the data
-def draw_umap(data, min_sample, min_size_clu, cluster_method, dimension):
+def draw_hdbscan(data, min_sample, min_size_clu, cluster_method, dimension):
     labels = hdbscan.HDBSCAN(
     min_samples=min_sample,
     min_cluster_size=min_size_clu,
