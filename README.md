@@ -1,6 +1,5 @@
 # Mapping traces of ketamine in the mesocorticolimbic circuit
 
-___
 
 This project deals with a new analysis of functional connectivity in resting-state fMRI data in a pharmacological drug study.
 In state-of-the-art functional connectivity studies signal measured in voxels are averaged across pre-defined regions
