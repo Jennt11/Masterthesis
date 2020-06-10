@@ -91,3 +91,19 @@ cvfitlr$lambda.min
 # Use only X as standardized:
 cv_fit_X_st=cv.glmnet(as.matrix(X_train_st), y_train, type.measure = "mse", nfolds = 5, lambda=lambdas_to_try, alpha=.5, standardize= FALSE)
 coef(cv_fit_X_st, s = "lambda.min")
+
+# 28/05/20: corrected data
+y_k <- npyLoad("C:/Users/canlab/Desktop/Masterthesis_python/ReDoneAnalysis20200420/Elastic_net/Y_Ketamine.npy")
+x1_k <- npyLoad("C:/Users/canlab/Desktop/Masterthesis_python/ReDoneAnalysis20200420/Elastic_net/X_1_Ketamine.npy")
+x2_k <- npyLoad("C:/Users/canlab/Desktop/Masterthesis_python/ReDoneAnalysis20200420/Elastic_net/X_2_Ketamine.npy")
+
+cv_fit=cv.glmnet(as.matrix(x1_k), y_k, type.measure = "mse", nfolds = 5, lambda=lambdas_to_try, alpha=.5, standardize= FALSE)
+coef(cv_fit, s = "lambda.min")
+
+cv_fit2=cv.glmnet(as.matrix(x2_k), y_k, type.measure = "mse", nfolds = 5, lambda=lambdas_to_try, alpha=.5, standardize= FALSE)
+coef(cv_fit2, s = "lambda.min")
+
+cad <- npyLoad("C:/Users/canlab/Desktop/Masterthesis_python/ReDoneAnalysis20200420/Elastic_net/CADSS_ket.npy")
+
+cv_fit_c=cv.glmnet(as.matrix(x1_k), cad, type.measure = "mse", nfolds = 5, lambda=lambdas_to_try, alpha=.5, standardize= FALSE)
+coef(cv_fit_c, s = "lambda.min")
