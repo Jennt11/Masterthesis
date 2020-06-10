@@ -19,6 +19,3 @@ ___
 - Bootstrap for centroid analyses to compare drug vs. placebo
 - Regression analysis with elastic net regularization
 
-#### UMAP dimensionality reduction visualizations
-
-![Caption for the picture.](/Plots/Baseline_Ket.png)
