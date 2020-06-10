@@ -10,7 +10,7 @@ algorithm [UMAP](https://arxiv.org/abs/1802.03426).
 
 ___
 
-#### The repository includes scripts for the following analysis:
+### The repository includes scripts for the following analysis:
 
 - Calculating Pearson's correlation distance from voxel-to-voxel functional connectivity measures
 - Uniform Manifold Approximation Projection (UMAP) dimensionality reduction
@@ -18,3 +18,7 @@ ___
 - Centroid analysis for region-of-interest membership
 - Bootstrap for centroid analyses to compare drug vs. placebo
 - Regression analysis with elastic net regularization
+
+#### UMAP dimensionality reduction visualizations
+
+![Caption for the picture.](/Plots/Baseline_Ket.png)
