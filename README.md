@@ -19,3 +19,7 @@ ___
 - Bootstrap for centroid analyses to compare drug vs. placebo
 - Regression analysis with elastic net regularization
 
+
+#### Results
+**Bootstrap**
+![Results Bootstrap](https://github.com/Jennt11/Masterthesis/blob/master/Plots/Density_bootstrap_baselinesplit_comparison_baseline_s24.png)
